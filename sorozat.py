@@ -4,9 +4,8 @@ def masodik():
     print("II/A, B, C:")
     lista = []
     for i in range(5):
-        vszam:int=random.randint(10, 20)
-        print(vszam, "-", end="")
-    lista.append(vszam)
+        lista.append(int(random.randint(10, 20)))
+    print(*lista, sep="-")
     return lista
 
 def kisebb(lista):
